@@ -1,6 +1,6 @@
 ## WebProgramming
 
-# Kişisel Bilgi
+# Proje Hakkında Bilgi
 İsim : Ebru Küçük <br/>
 Numara : 201502035 <br/>
 Bölüm Bilgisi : Bilgisayar Mühendisliği 2. Sınıf <br/>
