@@ -3,7 +3,7 @@
 # Proje Hakkında Bilgi
 İsim : Ebru Küçük <br/>
 Numara : 201502035 <br/>
-Bölüm Bilgisi : Bilgisayar Mühendisliği 2. Sınıf <br/>
+Bölüm Bilgisi : Bilgisayar Mühendisliği 3. Sınıf <br/>
 <br/>
 Ödevi hazırlerken yardım aldığım uygulama ve siteler : <br/>
  - Youtube
