@@ -6,26 +6,73 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     </head>
     <body>
         <section class="arkaplan">
             <nav>
                 <a href="anasayfa.html"><img src="resimler/pp.jpeg"></a>
-                <div class = "nav-links">
+                <div class ="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">Ana Sayfa</a></li>
                         <li><a href="">Hakkımda</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">İletişim Bilgileri</a></li>
-                    </ul>
+                   </ul>
                 </div>
+                <i class="fa fa-compass" onclick="showMenu()"></i>
             </nav>
 <div class="text-box">
     <h1>Merhaba ben Ebru Küçük!</h1>
-    <p>Bu siteyi Bandırma Onyedi Eylül Üniversitesinde aldığım İnternet Tabanlı Programlama dersi için yaptım. <br> Sitenin yapımında HTML, CSS ve Javascript kullandım.</p>
+    <p>Bu siteyi Bandırma Onyedi Eylül Üniversitesinde aldığım İnternet Tabanlı Programlama dersi için yaptım. <br> <br> <br> Sitenin yapımında HTML, CSS ve Javascript kullandım.</p>
     <a href="" class="hero-btn">Siteyi incelemek için.</a>
 </div>
-        </section>
+</section>
+  <!-- Hakkımda Bölümü -->
+  <section class="hakkimda">
+    <p1>Merhaba, ben Ebru Küçük!</p1>
+    <div class="row">
+    <div class ="hakkimda-col">
+        <h2>Kişisel Bilgiler</h2>
+        <p>Ben Ebru Küçük, 14 Kasım 2000 tarihinde doğdum Rize'de doğdum.
+        Kitap okumayı, müzik dinlemeyi, doğa yürüyüşü yapmayı severim</p>
+    </div>
+    <div class="hakkimda-col">
+        <h2>Eğitim</h2>
+        <p>2019 yılında Pazar Fen Lisesi'nden mezun oldum. Bandırma Onyedi Eylül Üniversitesi Bilgisayar Mühendisliği 3. Sınıf öğrencisiyim.
+        2019 yılında Portekiz'de Erasmus+ Lise Değişim Programına katıldım.</p>
+    </div>
+    <div class="hakkimda-col">
+        <h2>Deneyim</h2>
+        <p>Donanım alanında yaptığım ilk stajımı 2022 yılının yazında tamamladım. İlgi alanım daha yoğun olarak yazılım alanında.
+        Üniversite dersleri kapsamında içinde bulunduğum projelerde şimdiye kadar daha çok C# ve SQL Server üzerine çalıştım.</p>
+    </div> 
+</div>
+
+<!-- Blog Bölümü -->
+<section class = "blog">
+    <img src="resimler/blog.jpeg">
+    <h3>Bloglar</h3>
+    <p3>Bu kısımda Kişisel Web Sitem için hazırladığım bloglara ulaşabilirsiniz!</p3>
+
+    <div class="row">
+        <div class="blog-col">
+           
+        </div>
+    </div>
+</section>
+
+</script>
+        <!--  Javascript -> menü için fonksyionlar -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
