@@ -164,7 +164,7 @@ nav .fa{
     text-align: center;
     padding-top: 120px;
 }
-p1{
+.hakkimda p1{
     font-size: 35px;
     font-weight: 600;
     color: #460C68;
@@ -222,27 +222,56 @@ h2{
     text-align: center;
     padding-top: 120px;
 }
-h3{
+.blog h3{
     font-size: 40px;
     color: #460C68;
     margin-bottom: 35px;
     margin-top: 40px;
 }
-p3{
+.blog h4{
+    font-size: 35px;
+    color: #460C68;
+    margin-bottom: 35px;
+    margin-top: 150px;
+    font-weight: normal;
+}
+.blog p3{
     font-size: 23px;
     font-weight: 400;
     color: #460C68;
 }
 .blog-col{
-    flex-basis: 32%;
-    border-radius: 30px;
-
-    margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
+    width: 100%;
 }
-.blog img{
-    width: 70%;
-    flex-basis: 100%;
-    padding-top: 5px;
+.blog-col img{
+    width: 100%;
+    height: auto;
+}
+.katman{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+.katman:hover{
+    background: rgba(226,0,0,0.3);
+}
+h5{
+    font-size: 25px;
+    color: aquamarine ;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
