@@ -275,3 +275,69 @@ h5{
     left: 50%;
     transform: translateX(-50%);
 }
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-title {
+    margin-bottom: 10px;
+  }
+  
+  .modal-text {
+    margin-bottom: 50px;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  body.modal-open #overlay {
+    display: block;
+  }
+  
+  body.modal-open #myModal {
+    display: block;
+  }
+  .modal-title, .modal-text {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.modal p {
+    color: black;
+} 
+.modal ul li{
+    padding-bottom: 10px;
+}

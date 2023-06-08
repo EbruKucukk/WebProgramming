@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <title>Uyarı Mesajı</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>"Web Sitesi"</title>
         <link rel="stylesheet" href="style.css">
@@ -9,7 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     </head>
     <body>
-        
         <section class="arkaplan">
             <nav>
                 <a href="anasayfa.html"><img src="resimler/pp.jpeg"></a>
@@ -27,7 +28,25 @@
 <div class="text-box">
     <h1>Merhaba ben Ebru Küçük!</h1>
     <p>Bu siteyi Bandırma Onyedi Eylül Üniversitesinde aldığım İnternet Tabanlı Programlama dersi için yaptım. <br> <br> <br> Sitenin yapımında HTML, CSS ve Javascript kullandım.</p>
-    <a href="" class="hero-btn">Siteyi incelemek için.</a>
+    <!--<a href="" class="hero-btn">Siteyi incelemek için.</a>-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="hideModal()">&times;</span>
+          <h2 class="modal-title">Sosyal Medya</h2>
+          <p class="modal-text">Sosyal medya adreslerime buradan ulaşabilirsiniz:</p>
+          <ul class="social-media-list">
+            <li><a href="https://github.com/EbruKK" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/ebru-kucuk/" target="_blank">Linkedin</a></li>            
+          </ul>
+          <button class="modal-buton" onclick="hideModal()">Tamam!</button>
+        </div>
+      </div>
+    
+      <div id="overlay"></div>
+    
+      <button class="hero-btn" onclick="showModal()">Siteyi İncelemek İçin Tıklayınız.</button>
+    
+      <script src="script.js"></script>
 </div>
 </section>
   <!-- Hakkımda Bölümü -->
